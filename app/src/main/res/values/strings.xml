@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Happy Birthday</string>
     <string name="str">Hello Word</string>
+    <string name="hello">hello word</string>
+    <string name="birthday">Happy Birthday!</string>
+    <string name="from">Wang Xinmei</string>
+    <string name="action_settings" translatable="false">Happy Birthday</string>
 </resources>
