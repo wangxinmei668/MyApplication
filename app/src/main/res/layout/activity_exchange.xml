@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExchangeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rate"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rate"
+            android:textSize="36sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/rmb_hint"
+            android:id="@+id/rmb"
+
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+
+        <Button
+            android:id="@+id/dollar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_dollar"
+            android:onClick="exchange"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/japan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exchange"
+            android:text="@string/euro"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/karea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exchange"
+            android:text="@string/won"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openOne"
+            android:text="@string/open" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
