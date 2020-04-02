@@ -5,4 +5,19 @@
     <string name="birthday">Happy Birthday!</string>
     <string name="from">Wang Xinmei</string>
     <string name="action_settings" translatable="false">Happy Birthday</string>
+    <string name="title_activity_second" translatable="false">SecondActivity</string>
+    <string name="score" translatable="false">0</string>
+    <string name="teamA" translatable="false">teamA</string>
+    <string name="one" translatable="false">+1score</string>
+    <string name="two" translatable="false">+2score</string>
+    <string name="third" translatable="false">+3score</string>
+    <string name="teamB" translatable="false">TeamB</string>
+    <string name="restart" translatable="false">reset</string>
+    <string name="rmb_hint" translatable="false">Please input rmb</string>
+    <string name="button_dollar" translatable="false">exchange dollar</string>
+    <string name="button_Japanese" translatable="false">exchange japanese</string>
+    <string name="button_Korea" translatable="false">exchange korea</string>
+    <string name="rate" translatable="false">exchange rate</string>
+    <string name="open" translatable="false">open</string>
+    <string name="title" translatable="false">Setting</string>
 </resources>
