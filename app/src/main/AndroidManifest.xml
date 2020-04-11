@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+<!--    应用允许权限，要放在application前面-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

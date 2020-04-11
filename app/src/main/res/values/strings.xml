@@ -20,4 +20,6 @@
     <string name="rate" translatable="false">exchange rate</string>
     <string name="open" translatable="false">open</string>
     <string name="title" translatable="false">Setting</string>
+    <string name="euro" translatable="false">exchange euro</string>
+    <string name="won" translatable="false">exchange won</string>
 </resources>
