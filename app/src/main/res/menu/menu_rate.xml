@@ -5,5 +5,10 @@
     <item
         android:title="@string/title"
         android:id="@+id/rate"
-        app:showAsAction="always" />
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/open_list"
+        android:title="@string/lable_open_lsit"
+        app:showAsAction="never" />
 </menu>
