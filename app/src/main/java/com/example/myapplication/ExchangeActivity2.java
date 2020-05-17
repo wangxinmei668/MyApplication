@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -162,7 +164,25 @@ public class ExchangeActivity2 extends AppCompatActivity implements Runnable{
         startActivityForResult(config,1);//可以将新页面的内容返回给原页面发布命令的信号“1”
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_rate,menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.rate){
+            openConfig();
+        }else if(item.getItemId()==R.id.open_list){
+            //打开列表窗口
+            Intent list = new Intent(this,Mylist2Activity.class);
+            startActivity(list);
+
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     public void onActivityResult(int requestCode, int resultcode, Intent data) {
         if(requestCode==1&&resultcode==2){
@@ -224,7 +244,7 @@ public class ExchangeActivity2 extends AppCompatActivity implements Runnable{
 //
 //            String html = inputStream2String(in);//将输入流转换为string
 //            Document doc=Jsoup.parse(html);
-////            Log.i(TAG,"run html=" +html);
+//            Log.i(TAG,"run html=" +html);
 //
 //
 //        } catch (IOException e) {
