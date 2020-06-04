@@ -57,10 +57,10 @@ public class ExchangeActivity extends AppCompatActivity implements Runnable{
         //获取SP里保存的数据
         SharedPreferences sharedPreferences = getSharedPreferences("myrate", Activity.MODE_PRIVATE);
         //SharedPreferences sp =PreferenceManager.getDefaultSharedPreferences(this);这个方法也可以获取，但是他的xml文件是默认的只有一个也不可以更改，并且只适合高版本
-        dollarRate =sharedPreferences.getFloat("dollar_rate",0.0f);
-        euroRate =sharedPreferences.getFloat("euro_rate",0.0f);
-        wonRate =sharedPreferences.getFloat("won_rate",0.0f);
-        updateDate = sharedPreferences.getString("update_date","");
+        dollarRate =sharedPreferences.getFloat("dollar-rate",0.0f);
+        euroRate =sharedPreferences.getFloat("euro-rate",0.0f);
+        wonRate =sharedPreferences.getFloat("won-rate",0.0f);
+        updateDate = sharedPreferences.getString("update-date","");
 
         //获取当前系统时间
         Date today = Calendar.getInstance().getTime();
@@ -75,7 +75,7 @@ public class ExchangeActivity extends AppCompatActivity implements Runnable{
         Log.i(TAG,"openCreate: sp updateDate="+updateDate);
         Log.i(TAG,"openCreate: sp todayStr="+todayStr);
         //log.i是跟踪程序，可以选断点，也可以进行debug调试来一步一步追踪程序过程
-        if(!todayStr.equals(updateDate)){
+        if(todayStr.equals(updateDate)){
             Log.i(TAG, "onCreate: 需要更新");
             //开启子线程
             Thread t = new Thread(this);//一定不要忘记加this，当前对象，否则将找不到方法run
@@ -179,6 +179,19 @@ public class ExchangeActivity extends AppCompatActivity implements Runnable{
             Intent list = new Intent(this,Mylist2Activity.class);
             startActivity(list);
 
+            //测试数据库
+//            RateItem item1 = new RateItem("AAA","123");
+//            DBManager manager = new DBManager(this);
+//            manager.add(item1);
+//            manager.add(new RateItem("bbb","234"));
+//            Log.i(TAG, "onOptionsItemSelected: 写入数据完毕");
+
+            //查询所有数据
+//            List<RateItem> testList = manager.listAll();
+//            for(RateItem i:testList){
+//                Log.i(TAG, "onOptionsItemSelected: 取出数据[id="+i.getId()+"]name="+i.getCurName()+"rate="+i.getCurName());
+//            }
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -213,7 +226,7 @@ public class ExchangeActivity extends AppCompatActivity implements Runnable{
     @Override
     public void run() {
         Log.i(TAG,"run run()……");
-        for(int i=0 ;i<=6;i++){
+        for(int i=0 ;i<=3;i++){
             Log.i(TAG,"run i="+i);
             try {
                 Thread.sleep(2000);//让其睡觉，不要跑那么快
@@ -234,15 +247,15 @@ public class ExchangeActivity extends AppCompatActivity implements Runnable{
         //获取网络数据
 //        URL url = null;
 //        try {
-//            url = new URL("https://www.boc.cn/sourcedb/whpj/");
+//            url = new URL("https://www.boc.cn/sourcedb/whpj/");//获得一个网络地址
 //        } catch (MalformedURLException e) {
 //            e.printStackTrace();
 //        }
 //        try {
-//            HttpURLConnection http = (HttpURLConnection) url.openConnection();
+//            HttpURLConnection http = (HttpURLConnection) url.openConnection();//打开网络地址
 //            InputStream in = http.getInputStream();//网络数据就是输入流
 //
-//            String html = inputStream2String(in);
+//            String html = inputStream2String(in);//将输入流转换为string
 //            Document doc=Jsoup.parse(html);
 //            Log.i(TAG,"run html=" +html);
 //

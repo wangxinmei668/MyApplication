@@ -42,7 +42,7 @@ public class RateCalActivity extends AppCompatActivity {
                 TextView show  = (TextView)RateCalActivity.this.findViewById(R.id.show2);
                 if(s.length()>0){
                     float val = Float.parseFloat(s.toString());
-                    show.setText(val+"RMBV==>"+(100/rate*val));
+                    show.setText(val+"RMB==>"+(100/rate*val));
 
                 }else{
                     show.setText("");

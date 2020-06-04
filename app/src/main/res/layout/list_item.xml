@@ -9,7 +9,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
-    tools:context=".Mylist2Activity">
+    tools:context=".SerCActivity">
 
 
     <TextView

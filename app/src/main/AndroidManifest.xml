@@ -17,16 +17,47 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
-        tools:replace="android:icon">
-        <activity android:name=".RateCalActivity"></activity>
-        <activity android:name=".Mylist2Activity" />
-        <activity android:name=".RateListActivity" />
-        <activity android:name=".ExchangeActivity">
+        tools:replace="android:icon,android:label">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings_title">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myapplication.ViewActivity"/>
+        </activity>
+        <activity android:name=".ViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MyListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowSearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SerCActivity" />
+        <activity
+            android:name=".RateCalActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".Mylist2Activity" />
+        <activity android:name=".RateListActivity" />
+        <activity android:name=".ExchangeActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".ScoreActivity">
 
