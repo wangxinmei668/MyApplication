@@ -8,14 +8,18 @@
     android:orientation="vertical"
     tools:context=".ViewActivity">
 
-    <TabLayout
+
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/sliding_tabs"
-
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        app:tabIndicatorColor="@color/design_default_color_primary"
+        app:tabIndicatorHeight="8dp"
+        app:tabSelectedTextColor="#000000"
+        style="@style/MyCustomTabLayout"
         app:tabMode="fixed">
-    </TabLayout>
+    </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"

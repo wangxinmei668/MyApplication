@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 
@@ -69,6 +70,11 @@ public class RateListActivity extends ListActivity implements Runnable{
         };
         
 
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_rate,menu);
+        return true;
     }
 
     public void run(){

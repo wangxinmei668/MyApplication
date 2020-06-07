@@ -62,4 +62,9 @@
     <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+    <string name="about">about us</string>
+    <string name="course">course</string>
+    <string name="news">news</string>
+    <string name="living">living</string>
+    <string name="tadaynews">today activitys</string>
 </resources>

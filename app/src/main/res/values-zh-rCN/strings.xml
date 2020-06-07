@@ -5,4 +5,9 @@
     <string name="hello">你好</string>
     <string name="str">你好世界</string>
     <string name="from">王欣眉</string>
+    <string name="course">课程介绍</string>
+    <string name="living">直播入口</string>
+    <string name="news">相关新闻</string>
+    <string name="about">关于我们</string>
+    <string name="tadaynews">每日推荐</string>
 </resources>

@@ -29,4 +29,14 @@ public class MyPageAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 3;
     }
+
+    public CharSequence getPageTitle(int position) {
+        if(position ==0){
+            return "相关新闻" + position;
+        }else if(position==1){
+            return "课程展示" + position;
+        }else {
+            return "志愿活动" + position;
+        }
+    }
 }
