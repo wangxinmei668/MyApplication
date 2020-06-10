@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VolActivity"
+    tools:showIn="@layout/activity_vol">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/activity1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/id_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Activityname"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Place"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Add"
+                android:text="@string/add" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/activity2" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/activityname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Activityname"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/time2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/place2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Place"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/more2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/add2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Add"
+                android:text="@string/add" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/activity3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activityname2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/time3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/place3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Place"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/more3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/more2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/number3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/add3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Add"
+                android:text="@string/add" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

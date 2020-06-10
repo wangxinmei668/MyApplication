@@ -7,119 +7,83 @@
     tools:context=".FirrstFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imagek1"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/logo" />
+            android:layout_height="300dp"
+            android:src="@drawable/k1" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/abuotus"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
+            <Button
+                android:id="@+id/revious1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@android:drawable/ic_menu_send"
-                android:contentDescription="TODO" />
+                android:text="@string/Previous"
+                android:textSize="18sp" />
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
+            <TextView
+                android:id="@+id/black1"
+                android:layout_width="10sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/next1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@android:drawable/ic_menu_recent_history"
-                android:contentDescription="TODO" />
-
-            <ImageButton
-                android:id="@+id/news"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
-
-                android:layout_weight="1"
-                android:src="@android:drawable/stat_notify_chat"
-                android:contentDescription="TODO" />
-
-            <ImageButton
-                android:id="@+id/volunteer"
-                android:layout_width="80dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:src="@android:drawable/presence_audio_away"
-                android:contentDescription="TODO" />
+                android:text="@string/NEXT"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/white1"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/about"
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_horizontal"
-                android:text="@string/about"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/course"
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_weight="1"
-                android:text="@string/course"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_weight="1"
-                android:text="@string/news"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/live"
-                android:layout_width="80sp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_weight="1"
-                android:text="@string/living"
-                android:textSize="16sp" />
-        </LinearLayout>
+            android:layout_height="20sp" />
 
         <TextView
-            android:id="@+id/black"
+            android:id="@+id/introduce1"
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/presence_audio_away"
+            android:text="@string/introduce"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/today_activitys"
+            android:id="@+id/brief1.1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tadaynews"
-            android:textColor="@color/design_default_color_error"
-            android:textSize="36sp" />
+            android:text="@string/brief11"
+            android:textSize="18sp" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <TextView
+            android:id="@+id/brief1.2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/totalclass" />
+            android:text="@string/brief12"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/brief1.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/brief13"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
+
 
 </FrameLayout>

@@ -34,6 +34,8 @@ public class Mylist2Activity extends ListActivity implements Runnable, AdapterVi
     private List<HashMap<String,String>> listItems;//存放文字、图片信息
     private SimpleAdapter listItemAdapter;
     private int msgWhat=7;
+    String title;
+    String link;
 
     @SuppressLint("HandlerLeak")
     @Override
@@ -72,7 +74,7 @@ public class Mylist2Activity extends ListActivity implements Runnable, AdapterVi
         listItems = new ArrayList<HashMap<String,String>>();
         for(int i =0; i<10;i++){
             HashMap<String,String> map = new HashMap<String,String>();
-            map.put("ItemTitle","Rate:"+i);//标题文字
+            map.put("ItemTitle","News:"+i);//标题文字
             map.put("ItemDetail","detail"+i);//详情描述
             listItems.add(map);
         }
@@ -89,30 +91,24 @@ public class Mylist2Activity extends ListActivity implements Runnable, AdapterVi
         List<HashMap<String,String>> retlist=new ArrayList<HashMap<String,String>>();
         Document doc = null;
         try {
-            doc = Jsoup.connect("http://www.usd-cny.com/bankofchina.htm").get();
+            doc = Jsoup.connect("https://www.ccc.org.cn/col/col270/index.html").get();
             Log.i(TAG, "run: "+doc.title());
-            Elements tables = doc.getElementsByTag("table");
-            Element table2 = tables.get(0);
-
+            Elements elements = doc.getElementsByTag("li");
+            Log.i(TAG, "run: "+elements.get(0));
             //获取ID中的数据
-            Elements tds = table2.getElementsByTag("td");
-            for(int i=0; i<tds.size();i+=6){
-                Element td1=tds.get(i);
-                Element td2=tds.get(i+5);
+            for(Element element : elements){
+                //String title2   = element.select("a").attr("title");
+                //Log.i(TAG,"title2"+title2);
+                title = element.select("a").text();
+                Log.i(TAG,"title:"+title);
+                link=element.select("a").attr("href").replace("/", "").trim();
+                Log.i(TAG, "url"+link);
 
-                String str1 = td1.text();
-                String val = td2.text();
-
-                Log.i(TAG, "run: "+str1+"==>"+val);
-
+                Log.i(TAG, "run: "+title+"==>"+link);
                 HashMap<String,String> map = new HashMap<String,String>();
-                map.put("ItemTitle",str1);
-                map.put("ItemDetail",val);
+                map.put("ItemTitle",link);
+                map.put("ItemDetail",title);
                 retlist.add(map);
-
-
-
-
 
             }
 

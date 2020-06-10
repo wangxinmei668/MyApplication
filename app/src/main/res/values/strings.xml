@@ -65,6 +65,31 @@
     <string name="about">about us</string>
     <string name="course">course</string>
     <string name="news">news</string>
+    <string name="voluntary">volunteering</string>
     <string name="living">living</string>
     <string name="tadaynews">today activitys</string>
+    <string name="logo">Course Introduction</string>
+    <string name="introduction">Introduction</string>
+    <string name="brief" translatable="false">“盒以为家”教育科技有限公司是一家致力于为6-9岁儿童提供自我成长的空间，为重视家庭教育而缺乏时间与高效教育孩子能力的家庭提供互联网立体家庭教育服务的企业。本公司精准把握家庭的实际需求，通过三维立体教学模式，解决传统家庭教育的缺陷，促进家长孩子共同进步。</string>
+    <string name="product">Product Introduction</string>
+    <string name="Previous">Previous Section</string>
+    <string name="NEXT">Next Section</string>
+    <string name="introduce">Introduce</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_vol">VolActivity</string>
+    <string name="Activityname">Activity:assistants</string>
+    <string name="time">Time:2020-7-10</string>
+    <string name="Place">Place:XXX promary school</string>
+    <string name="more">More:assisting the teacher</string>
+    <string name="add">Add Activity</string>
+    <string name="activityname2">Activity:teachers</string>
+    <string name="more2">More: teach students</string>
+    <string name="number">number：</string>
+    <string name="brief11" translatable="false">随着命运共同体的形成，地球早已连接成了一座城市，从天涯海角，成为咫尺近邻。</string>
+    <string name="brief12" translatable="false">财商不仅仅局限于日常生活之中，更要求孩子们培养自己的世界眼光。让我们和孩子们一起放眼世界，了解国家与国家之间的风雨友谊。</string>
+    <string name="brief13" translatable="false">感受中国制造的大国力量。</string>
+    <string name="brief2">一只扇动翅膀的蝴蝶，就能引发海啸；在全球化时代，经济这个与生活密不可分的词语，也在悄然变迁；让我们从地球的历史谈起，共同学会发现、创造、勇气与智慧</string>
+    <string name="brief3">弱肉强食是自然界的法则，同心协力未必所向披靡？走进企业的趣味互怼日常，了解竞争者之间的智慧与垄断背后断裂的真相！</string>
+    <string name="brief41" translatable="false">在地球这座巨型城市里，不仅有人类，更有许多动物朋友们。他们的生存方式和我们一样嘛？他们和我们又有什么关系呢？</string>
+    <string name="brief42" translatable="false">疫情爆发到底是谁的错？《华盛顿公约》是贸易公约还是动物保护公约？最后一节地球城市课，让我们开启野生动物的神奇探险。</string>
 </resources>
