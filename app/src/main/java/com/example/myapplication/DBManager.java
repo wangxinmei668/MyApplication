@@ -18,21 +18,21 @@ public class DBManager {
 
     }
 
-    public void add(RateItem item){
+    public void add(NewsItem item){
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("curname",item.getCurName());
-        values.put("currate",item.getCurRate());
+        values.put("curNews",item.getCurNews());
+        values.put("curlink",item.getCurNews());
         db.insert(TBNAME,null,values);
         db.close();
     }
 
-    public void addAll(List<RateItem> list){
+    public void addAll(List<NewsItem> list){
         SQLiteDatabase db = dbHelper.getWritableDatabase();
-        for (RateItem item : list){
+        for (NewsItem item : list){
             ContentValues values = new ContentValues();
-            values.put("curname",item.getCurName());
-            values.put("currate",item.getCurRate());
+            values.put("curNews",item.getCurNews());
+            values.put("curlink",item.getCurlink());
             db.insert(TBNAME,null,values);
 
         }
@@ -53,28 +53,28 @@ public class DBManager {
 
     }
 
-    public void update(RateItem item){
+    public void update(NewsItem item){
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put("curname",item.getCurName());
-        values.put("currate",item.getCurRate());
+        values.put("curNews",item.getCurNews());
+        values.put("curlink",item.getCurlink());
         db.insert(TBNAME,null,values);
         db.update(TBNAME,values,"ID=?",new String[]{String.valueOf(item.getId())});
         db.close();
 
     }
 
-    public List<RateItem> listAll(){
-        List<RateItem> rateList=null;
+    public List<NewsItem> listAll(){
+        List<NewsItem> rateList=null;
         SQLiteDatabase db=dbHelper.getReadableDatabase();
         Cursor cursor = db.query(TBNAME,null,null,null,null,null,null);
         if(cursor!=null){
-            rateList = new ArrayList<RateItem>();
+            rateList = new ArrayList<NewsItem>();
             while (cursor.moveToNext()){
-                RateItem item = new RateItem();
+                NewsItem item = new NewsItem();
                 item.setId(cursor.getInt(cursor.getColumnIndex("ID")));
-                item.setCurRate(cursor.getString(cursor.getColumnIndex("CURRATE")));
-                item.setCurName(cursor.getString(cursor.getColumnIndex("CURNAME")));
+                item.setCurlink(cursor.getString(cursor.getColumnIndex("CURLINK")));
+                item.setCurNews(cursor.getString(cursor.getColumnIndex("CURNEWS")));
 
                 rateList.add(item);
             }
@@ -86,15 +86,15 @@ public class DBManager {
 
     }
 
-    public RateItem findById(int id){
+    public NewsItem findById(int id){
         SQLiteDatabase db=dbHelper.getReadableDatabase();
         Cursor cursor = db.query(TBNAME,null,"ID=?",new String[]{String.valueOf(id)},null,null,null);
-        RateItem rateItem = null;
+        NewsItem rateItem = null;
         if(cursor!=null && cursor.moveToFirst()){
-            rateItem = new RateItem();
+            rateItem = new NewsItem();
             rateItem.setId(cursor.getInt(cursor.getColumnIndex("ID")));
-            rateItem.setCurRate(cursor.getString(cursor.getColumnIndex("CURRATE")));
-            rateItem.setCurName(cursor.getString(cursor.getColumnIndex("CURNAME")));
+            rateItem.setCurlink(cursor.getString(cursor.getColumnIndex("CURLINK")));
+            rateItem.setCurNews(cursor.getString(cursor.getColumnIndex("CURNEWS")));
             cursor.close();
         }
         db.close();

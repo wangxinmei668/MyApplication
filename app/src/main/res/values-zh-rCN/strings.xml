@@ -10,7 +10,7 @@
     <string name="news">相关新闻</string>
     <string name="about">关于我们</string>
     <string name="tadaynews">每日推荐</string>
-    <string name="logo">LOGO</string>
+    <string name="logo">课程结构剖析</string>
     <string name="introduction">关于我们</string>
     <string name="product">产品介绍</string>
     <string name="voluntary">志愿活动</string>
@@ -20,8 +20,8 @@
     <string name="Previous">上一节</string>
     <string name="activityname2">活动名称：财经素养教师</string>
     <string name="add">加入活动</string>
-    <string name="introduce">介绍</string>
-    <string name="more">更多内容：辅助助教管理学生</string>
+    <string name="introduce">课程详情</string>
+    <string name="more">更多内容：辅助管理学生</string>
     <string name="more2">更多内容：利用自身所学教育孩子</string>
     <string name="time">时间：2020-7-10</string>
     <string name="title_activity_news">新闻</string>
@@ -29,4 +29,18 @@
     <string name="brief2">一只扇动翅膀的蝴蝶，就能引发海啸；在全球化时代，经济这个与生活密不可分的词语，也在悄然变迁；让我们从地球的历史谈起，共同学会发现、创造、勇气与智慧</string>
     <string name="brief3">弱肉强食是自然界的法则，同心协力未必所向披靡？走进企业的趣味互怼日常，了解竞争者之间的智慧与垄断背后断裂的真相！</string>
     <string name="number">志愿者报名人数：</string>
+    <string name="renumber">剩余名额：</string>
+    <string name="_9">9</string>
+    <string name="_5">5</string>
+    <string name="_11">11</string>
+    <string name="product_title">盒以为家</string>
+    <string name="Time">直播时间为：</string>
+    <string name="againpassword">请再输入一次密码</string>
+    <string name="email">请输入邮箱：</string>
+    <string name="loginname">请登录</string>
+    <string name="remember">记住</string>
+    <string name="resigter">请注册</string>
+    <string name="sign_in">注册</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
 </resources>

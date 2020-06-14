@@ -4,28 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".ViewActivity">
 
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/sliding_tabs"
+        style="@style/MyCustomTabLayout"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:background="#ffffff"
         app:tabIndicatorColor="@color/design_default_color_primary"
         app:tabIndicatorHeight="8dp"
+        app:tabMode="fixed"
         app:tabSelectedTextColor="#000000"
-        style="@style/MyCustomTabLayout"
-        app:tabMode="fixed">
-    </com.google.android.material.tabs.TabLayout>
+        app:xTabMode="fixed"
+        app:xTabSelectedTextColor="#50F26B"
+        app:xTabSelectedTextSize="17sp"
+        app:xTabTextSize="15sp"></com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="580dp">
 
     </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/tab_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="18sp" />
+    </LinearLayout>
 
 </LinearLayout>

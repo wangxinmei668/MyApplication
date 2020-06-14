@@ -1,8 +1,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.myapplication.MainActivity">
+    tools:context="com.example.myapplication.IndexActivity">
     <item
-        android:id="@+id/happybirthday"
-        android:title="@string/title" />
+        android:id="@+id/about_us"
+        android:title="@string/about" />
+    <item
+        android:id="@+id/course_s"
+        android:title="@string/course" />
+    <item
+        android:id="@+id/news_list"
+        android:title="@string/news" />
+    <item
+        android:id="@+id/volunteer_list"
+        android:title="@string/voluntary" />
 </menu>

@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -20,23 +22,28 @@ public class MyPageAdapter extends FragmentPagerAdapter {
         }else if(position==1){
             return new SecondFragment();
 
-        }else {
+        }else if(position==2){
             return new ThirdFragment();
+        }else{
+            return new FourFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     public CharSequence getPageTitle(int position) {
+        Log.i("pageAdapter", "getPageTitle:课程 ");
         if(position ==0){
-            return "相关新闻" + position;
+            return "课程1";
         }else if(position==1){
-            return "课程展示" + position;
-        }else {
-            return "志愿活动" + position;
+            return "课程2";
+        }else if(position==2){
+            return "课程3";
+        }else{
+            return "课程4";
         }
     }
 }

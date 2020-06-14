@@ -1,13 +1,17 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class IndexActivity extends AppCompatActivity {
@@ -86,7 +90,7 @@ public class IndexActivity extends AppCompatActivity {
             startActivity(config_us);
         }else if(btn.getId()==R.id.newsButton){
             Log.i("open","openOne: ");
-            Intent config_news =new Intent(this, NewsActivity.class);
+            Intent config_news =new Intent(this, Mylist2Activity.class);
             startActivity(config_news);
         }else if(btn.getId()==R.id.courseButton) {
             Log.i("open","openOne: ");
@@ -99,5 +103,72 @@ public class IndexActivity extends AppCompatActivity {
         }
     }
 
+    public void web(View btn){
+        if(btn.getId()==R.id.image1){
+            Log.i("open","openOne: ");
+            Uri uri =Uri.parse("https://mp.weixin.qq.com/s/yofintxqVI43Ys042EIxDw");
+            Intent web = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(web);
+        }else if(btn.getId()==R.id.imageButton2){
+            Log.i("open","openOne: ");
+            Uri uri =Uri.parse("https://mp.weixin.qq.com/s/UA6XWj5FDBz2JOAdqksD5w");
+            Intent web = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(web);
+        }else if(btn.getId()==R.id.courseButton) {
+            Log.i("open","openOne: ");
+            Uri uri =Uri.parse("https://mp.weixin.qq.com/s/Yp3w18jvClevo5R6bwOmWQ");
+            Intent web = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(web);
+        }else if(btn.getId()==R.id.volunteerButton) {
+            Log.i("open","openOne: ");
+            Uri uri =Uri.parse("https://mp.weixin.qq.com/s/q_RXRjwv_Fv_r3IxsCD_zQ");
+            Intent web = new Intent(Intent.ACTION_VIEW,uri);
+            startActivity(web);
+        }
+    }
 
+    @Override
+    public void openOptionsMenu() {
+        super.openOptionsMenu();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.about_us){
+            Intent list = new Intent(this,AboutActivity.class);
+            startActivity(list);
+        }else if(item.getItemId()==R.id.course_s){
+            //打开列表窗口
+            Intent list = new Intent(this,ViewActivity.class);
+            startActivity(list);
+        }else if(item.getItemId()==R.id.news_list){
+            //打开列表窗口
+            Intent list = new Intent(this,Mylist2Activity.class);
+            startActivity(list);
+        }else if(item.getItemId()==R.id.volunteer_list){
+            //打开列表窗口
+            Intent list = new Intent(this,VolActivity.class);
+            startActivity(list);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void sign(View btn) {
+        if (btn.getId() == R.id.loginin) {
+            Log.i("open", "openOne: loginin");
+            Intent config_in = new Intent(this, LoginActivity.class);
+            startActivity(config_in);
+        }else if (btn.getId() == R.id.resigter) {
+            Log.i("open", "openOne:resigter ");
+            Intent config_up = new Intent(this, RegisterActivity.class);
+            startActivity(config_up);
+        }
+    }
 }

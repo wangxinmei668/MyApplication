@@ -11,25 +11,27 @@
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@drawable/logo"
-        android:label="@string/rate"
+        android:label="@string/product_title"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:icon,android:label">
-        <activity android:name=".AboutActivity"></activity>
-        <activity android:name=".IndexActivity" >
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".IndexActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".VolActivity"
             android:label="@string/title_activity_vol"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".NewsActivity"
             android:label="@string/title_activity_news"
@@ -72,7 +74,11 @@
         <activity
             android:name=".RateCalActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity android:name=".Mylist2Activity" />
+        <activity android:name=".Mylist2Activity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".RateListActivity" />
         <activity android:name=".ExchangeActivity">
 

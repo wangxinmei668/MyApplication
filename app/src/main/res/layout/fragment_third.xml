@@ -3,48 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="550dp"
     tools:context=".ThirdFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="550dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imagek3"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/showclass1" />
+            android:layout_height="250dp"
+            android:src="@drawable/k3" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/Time3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:text="@string/Time"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/revious3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Previous"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/black3"
-                android:layout_width="10sp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-            <Button
-                android:id="@+id/next3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/NEXT"
-                android:textSize="18sp" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/date3"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/white3"
@@ -64,6 +50,7 @@
             android:id="@+id/brief3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:lineSpacingMultiplier='1.2'
             android:text="@string/brief3"
             android:textSize="18sp" />
 

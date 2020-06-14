@@ -92,4 +92,22 @@
     <string name="brief3">弱肉强食是自然界的法则，同心协力未必所向披靡？走进企业的趣味互怼日常，了解竞争者之间的智慧与垄断背后断裂的真相！</string>
     <string name="brief41" translatable="false">在地球这座巨型城市里，不仅有人类，更有许多动物朋友们。他们的生存方式和我们一样嘛？他们和我们又有什么关系呢？</string>
     <string name="brief42" translatable="false">疫情爆发到底是谁的错？《华盛顿公约》是贸易公约还是动物保护公约？最后一节地球城市课，让我们开启野生动物的神奇探险。</string>
+    <string name="renumber">Remaining numbers:</string>
+    <string name="_9">9</string>
+    <string name="_5">5</string>
+    <string name="_11">11</string>
+    <string name="product_title">family</string>
+    <string name="user_name">user name</string>
+    <string name="password">password</string>
+    <string name="remember">remember</string>
+    <string name="loginname">Please login</string>
+    <string name="resigter">resigter</string>
+    <string name="againpassword">again password</string>
+    <string name="email">email</string>
+    <string name="sign_in">sign in</string>
+    <string name="Time">Time:</string>
+    <string name="date1" translatable="false">2020年4月3日 20：00</string>
+    <string name="date2" translatable="false">2020年4月9日（周四）20：00</string>
+    <string name="date3" translatable="false">2020年4月7日（周五）20：00</string>
+    <string name="date4" translatable="false">2020年4月23日（周四）20：00</string>
 </resources>
